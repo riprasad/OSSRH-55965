@@ -1,4 +1,4 @@
-name: github-actions-test
+name: github-actions-test-
 release-version: 1.0.0.Final
 snapshot-version: 1.0.1-SNAPSHOT
 touched: 0
