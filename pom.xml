@@ -7,7 +7,7 @@
 	<groupId>com.github.riprasad</groupId>
 	<artifactId>github-actions-test</artifactId>
 	<packaging>jar</packaging>
-	<version>2.6.0-SNAPSHOT</version>
+	<version>1.0.0.Final</version>
 	<name>A Test Project</name>
 	<description>A sample project to test github actions workflow</description>
 	<url>http://www.example.com</url>
