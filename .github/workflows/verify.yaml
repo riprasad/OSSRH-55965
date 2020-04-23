@@ -1,16 +1,17 @@
 on:
   push:
-    branches: [master]
     paths-ignore:
-      - '.gitignore'
+      - '.gitignore/project.yaml'
       - 'LICENSE'
       - 'README*'
+    branches: [master]
   pull_request:
-    branches: [master]
     paths-ignore:
-      - '.gitignore'
+      - '.gitignore/project.yaml'
       - 'LICENSE'
       - 'README*'
+    branches: [master]
+    
 
 name: Verify Build Workflow
 
