@@ -1,2 +1,2 @@
-# OSSRH-55965-
-Repository created to verify to OSSRH for ownership of github account
+# github-actions-test
+A repository to test GitHub Actions used for Apicurio projects.
