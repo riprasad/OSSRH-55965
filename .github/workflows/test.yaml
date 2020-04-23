@@ -1,0 +1,14 @@
+name: Semantic Release Dry Run
+
+on:
+  repository_dispatch:
+    types: [gren]
+    
+jobs:
+  gren-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Gren
+        run: npm install github-release-notes -g
+      - name: Generate Release Notes
+        run: gren release --token=${{ secrets.GITHUB_TOKEN }} --override --prefix=v
