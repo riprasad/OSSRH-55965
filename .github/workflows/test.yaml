@@ -15,4 +15,4 @@ jobs:
       - name: Set up Gren
         run: npm install github-release-notes -g
       - name: Generate Release Notes
-        run: gren release --token=${{ secrets.GITHUB_TOKEN }} --override --prefix=v
+        run: gren release --token=${{ secrets.GITHUB_TOKEN }} --override --prefix=v --tags=all
