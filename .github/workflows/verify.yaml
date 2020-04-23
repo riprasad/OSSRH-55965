@@ -1,13 +1,13 @@
 on:
   push:
     paths-ignore:
-      #- '.github/project.yaml'
+      - '.github/project.yaml'
       - 'LICENSE'
       - 'README*'
     branches: [master]
   pull_request:
     paths-ignore:
-      #- '.github/project.yaml'
+      - '.github/project.yaml'
       - 'LICENSE'
       - 'README*'
     branches: [master]
