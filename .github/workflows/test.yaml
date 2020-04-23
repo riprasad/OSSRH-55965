@@ -8,6 +8,10 @@ jobs:
   gren-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Node.js v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - name: Set up Gren
         run: npm install github-release-notes -g
       - name: Generate Release Notes
