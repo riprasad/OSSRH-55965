@@ -1,13 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-<groupId>com.github.riprasad</groupId>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.riprasad</groupId>
 	<artifactId>github-actions-test</artifactId>
 	<packaging>jar</packaging>
 	<version>2.6.0-SNAPSHOT</version>
 	<name>A Test Project</name>
-	<description>Test project to test github actions workflow</description>
+	<description>A sample project to test github actions workflow</description>
 	<url>http://www.example.com</url>
 
 	<scm>
@@ -52,7 +54,8 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-    <properties>
+	
+	 <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
         <timestamp>${maven.build.timestamp}</timestamp>
@@ -127,13 +130,6 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <profiles>
         <profile>
             <id>release</id>
@@ -193,4 +189,5 @@
             </build>
         </profile>
     </profiles>
+
 </project>
