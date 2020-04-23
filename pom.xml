@@ -2,63 +2,56 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+<groupId>com.github.riprasad</groupId>
+	<artifactId>github-actions-test</artifactId>
+	<packaging>jar</packaging>
+	<version>2.6.0-SNAPSHOT</version>
+	<name>A Test Project</name>
+	<description>Test project to test github actions workflow</description>
+	<url>http://www.example.com</url>
 
-    <groupId>io.apicurio</groupId>
-    <artifactId>apicurio-github-actions</artifactId>
-    <version>1.0.0.Final</version>
-    <name>apicurio-github-actions</name>
+	<scm>
+		<connection>scm:git:git@github.com/riprasad/gitub-actions-test.git</connection>
+		<developerConnection>scm:git:git@github.com/riprasad/gitub-actions-test.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/riprasad/gitub-actions-test</url>
+	</scm>
 
-    <url>https://www.apicur.io/</url>
-    <description>Open Source API Design Studio</description>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
-    <organization>
-        <name>Red Hat</name>
-        <url>https://www.redhat.com</url>
-    </organization>
+	<organization>
+		<name>Red Hat</name>
+		<url>https://www.redhat.com</url>
+	</organization>
 
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
+	<developers>
+		<developer>
+			<name>Rishab Prasad</name>
+			<id>riprasad</id>
+			<email>riprasad@redhat.com</email>
+			<organization>Red Hat</organization>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
 
-    <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/apicurio/apicurio-github-actions/issues</url>
-    </issueManagement>
-
-    <scm>
-        <connection>scm:git:git@github.com:apicurio/apicurio-github-actions.git</connection>
-        <developerConnection>scm:git:git@github.com:apicurio/apicurio-github-actions.git</developerConnection>
-        <url>scm:git:git@github.com:apicurio/apicurio-github-actions.git</url>
-    </scm>
-
-    <developers>
-        <developer>
-            <name>Eric Wittmann</name>
-            <id>EricWittmann</id>
-            <email>eric.wittmann@redhat.com</email>
-            <organization>Red Hat</organization>
-            <roles>
-                <role>Project Lead</role>
-                <role>Developer</role>
-            </roles>
-            <timezone>-5</timezone>
-        </developer>
-        <developer>
-            <name>Rishab Prasad</name>
-            <id>riprasad</id>
-            <email>rprasad@redhat.com</email>
-            <organization>Red Hat</organization>
-            <roles>
-                <role>Developer</role>
-            </roles>
-            <timezone>+5:30</timezone>
-        </developer>
-    </developers>
-
+	<licenses>
+		<license>
+			<name>Apache License Version 2.0</name>
+			<url>https://repository.jboss.org/licenses/apache-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
