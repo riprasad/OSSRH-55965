@@ -6,7 +6,7 @@ on:
       - 'LICENSE'
       - 'README*'
       - 'docs/**'
-    branches: [master, 1.2.x]
+    branches: [master]
   pull_request:
     paths-ignore:
       - '.github/project.yaml'
